@@ -53,13 +53,13 @@ Trix.registerElement "trix-editor", do ->
     %t {
       display: block;
     }
-
+    
     %t:empty:not(:focus)::before {
       content: attr(placeholder);
       color: graytext;
       cursor: text;
     }
-
+    
     %t a[contenteditable=false] {
       cursor: text;
     }
@@ -78,12 +78,12 @@ Trix.registerElement "trix-editor", do ->
       left: -9999px;
       max-height: 0px;
     }
-
+    /* 修改后
     %t #{attachmentSelector} figcaption[data-trix-placeholder]:empty::before {
       content: attr(data-trix-placeholder);
       color: graytext;
     }
-
+    */
     %t [data-trix-cursor-target] {
       display: #{cursorTargetStyles.display} !important;
       width: #{cursorTargetStyles.width} !important;

@@ -36,7 +36,7 @@ Trix.config.lang =
   # indent: "增加缩进"
   italic: "斜体"
   link: "插入链接"
-  numbers: "数字"
+  numbers: "有序列表"
   # outdent: "减少缩进"
   quote: "引用块"
   redo: "前进"
