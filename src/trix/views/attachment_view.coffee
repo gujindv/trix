@@ -20,9 +20,9 @@ class Trix.AttachmentView extends Trix.ObjectView
       data: @getData()
       editable: false
 
-    if href = @getHref()
-      innerElement = makeElement(tagName: "a", editable: false, attributes: {href, tabindex: -1})
-      figure.appendChild(innerElement)
+    # if href = @getHref()
+    #   innerElement = makeElement(tagName: "a", editable: false, attributes: {href, tabindex: -1})
+    #   figure.appendChild(innerElement)
 
     if @attachment.hasContent()
       innerElement.innerHTML = @attachment.getContent()
